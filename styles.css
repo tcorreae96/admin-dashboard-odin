@@ -177,3 +177,68 @@ html {
 	background-color: #0369a1;
 	cursor: pointer;
 }
+
+/* CONTENT CSS */
+.content-grid {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: repeat(6, 1fr);
+	padding: 1rem;
+	gap: 1rem;
+}
+
+.projects {
+	grid-row: 1 / 7;
+}
+
+.announcements {
+	grid-row: 1 / 4;
+}
+
+.trending {
+	grid-row: 4 / 7;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 1rem;
+}
+
+.card {
+	background-color: #e0f2fe;
+	padding: 1rem;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card p, .card h4, .card h5 {
+	margin: 0;
+}
+
+.friends-profiles {
+	display: flex;
+	align-items: center;
+}
+
+.avatar-small {
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.options-cards {
+	display: flex;
+	justify-content: end;
+	gap: 0.8rem;
+}
+
+.options-cards svg {
+	width: 1.3rem;
+	height: 1.3rem;
+	fill: #3f3f3f;
+}
